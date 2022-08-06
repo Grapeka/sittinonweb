@@ -1,0 +1,169 @@
+.container {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  height: 54px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.86);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .content {
+    height: 100%;
+    width: 52%;
+    min-width: 700px;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+
+    .brand {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 11px;
+      justify-content: flex-start;
+      align-items: center;
+      color: rgba(white, 1);
+      font-size: 11px;
+
+      .icon {
+        color: rgb(241, 239, 239);
+        font-size: 17px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .menu {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+
+      .item {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(160, 160, 160);
+        transition: 0.1s;
+
+        &:hover {
+          transition: 0.22s;
+          cursor: pointer;
+          color: rgb(241, 239, 239);
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 851px) and (max-width: 1000px) {
+  .container {
+    .content {
+      height: 100%;
+      width: 75%;
+      min-width: 0;
+      max-width: 1300px;
+      display: flex;
+      flex-direction: row;
+
+      .brand {
+        width: 50%;
+        height: 100%;
+        gap: 11px;
+        font-size: 10px;
+
+        .icon {
+          font-size: 15px;
+        }
+      }
+
+      .menu {
+        width: 50%;
+        height: 100%;
+        gap: 7%;
+
+        .item {
+          font-size: 13px;
+
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  .container {
+    .content {
+      width: 75%;
+      min-width: 0;
+      .brand {
+        font-size: 9px;
+
+        .icon {
+          font-size: 13px;
+        }
+      }
+
+      .menu {
+        gap: 6%;
+
+        .item {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 600px) {
+  .container {
+    .content {
+      width: 75%;
+      min-width: 0;
+      .brand {
+        font-size: 9px;
+
+        .icon {
+          font-size: 13px;
+        }
+      }
+
+      .menu {
+        gap: 5%;
+
+        .item {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 539px) {
+  .container {
+    .content {
+      width: 89%;
+      min-width: 0;
+      .brand {
+        font-size: 9px;
+
+        .icon {
+          font-size: 13px;
+        }
+      }
+
+      .menu {
+        gap: 5%;
+
+        .item {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
