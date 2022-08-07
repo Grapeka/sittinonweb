@@ -167,3 +167,9 @@
     }
   }
 }
+
+@media only screen and (min-width: 0) and (max-width: 449px) {
+  .container {
+    display: none;
+  }
+}
