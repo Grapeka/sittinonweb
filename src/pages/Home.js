@@ -1,6 +1,7 @@
 import classes from "./Home.module.scss";
 import { useState } from "react";
 import Navbar from "../components/์Navbar/Navbar";
+import Greeting from "../components/Greeting/Greeting";
 
 const Home = () => {
   const [navMobileOverlay, setNavMobileOverlay] = useState(false);
@@ -10,6 +11,7 @@ const Home = () => {
         navMobileOverlay={navMobileOverlay}
         setNavMobileOverlay={setNavMobileOverlay}
       />
+      <Greeting />
       <div className={classes.sth}></div>
     </div>
   );

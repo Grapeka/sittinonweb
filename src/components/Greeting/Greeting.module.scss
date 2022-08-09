@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  color: rgb(241, 239, 239);
+  .content {
+    .avatar {
+      margin-top: 25px;
+      width: 110px;
+      .imgBox {
+        user-select: none;
+        height: 58%;
+        min-height: 60%;
+        width: 100%;
+
+        .img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .text {
+      font-size: 18px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      .firstGreet {
+        font-weight: 600;
+      }
+
+      .mid {
+      }
+
+      .last {
+      }
+
+      .button {
+      }
+    }
+  }
+}

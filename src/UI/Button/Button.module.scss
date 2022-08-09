@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  margin-top: 5px;
+
+  .box {
+    transition: 0.1s;
+    height: 29px;
+    background-color: rgba(10, 12, 20, 255);
+    padding: 0.25rem 1rem;
+    border: 2px solid white;
+    box-shadow: 4px 4px rgba(15, 25, 20, 255);
+    border-radius: 8px;
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      column-gap: 6px;
+      .text {
+      }
+
+      .arrow {
+        margin-top: 8px;
+        .icon {
+        }
+      }
+    }
+    &:hover {
+      transition: 0.2s;
+      cursor: pointer;
+      border: 2px solid rgb(245, 46, 178);
+      transform: rotate(-3deg);
+    }
+  }
+}

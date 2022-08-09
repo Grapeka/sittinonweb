@@ -1,7 +1,7 @@
 content size
     default
-      width: 51%;
-      max-width: 1300px;
+    width: 52%;
+    min-width: 700px;
 
     851px - 1000px
       width: 75%;
@@ -11,5 +11,7 @@ content size
 
 color
     strange white color: rgb(241, 239, 239);
+    strange black color: rgba(10,12,20,255)
+    black shadow: rgba(15, 25, 20, 255);
 
 
