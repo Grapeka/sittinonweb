@@ -13,5 +13,6 @@ color
     strange white color: rgb(241, 239, 239);
     strange black color: rgba(10,12,20,255)
     black shadow: rgba(15, 25, 20, 255);
+    minor color: #293244;
 
 
