@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/์Navbar/Navbar";
 import Greeting from "../components/Greeting/Greeting";
 import Spacer from "../components/Spacer/Spacer";
+import MySkills from "../components/MySkills/MySkills";
 
 const Home = () => {
   const [navMobileOverlay, setNavMobileOverlay] = useState(false);
@@ -14,6 +15,7 @@ const Home = () => {
       />
       <Greeting />
       <Spacer />
+      <MySkills />
       <div className={classes.sth}></div>
     </div>
   );
