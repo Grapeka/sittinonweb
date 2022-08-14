@@ -3,6 +3,7 @@
   width: 100%;
   font-family: "Rubik";
   color: rgb(241, 239, 239);
+  padding-bottom: 87px;
   .head {
     font-weight: 500;
     font-size: 28px;
@@ -17,11 +18,11 @@
       border-radius: 15px;
       overflow: hidden;
       height: 375px;
-      transition: 0.55s;
+      transition: 0.2s;
 
       &:hover {
         cursor: pointer;
-        transition: 0.388s;
+        transition: 0.288s;
         transform: scale(0.98);
 
         .box {
@@ -29,7 +30,7 @@
           .img {
           }
           .overlay {
-            transition: 0.388s;
+            transition: 0.288s;
             background-color: rgb(37, 33, 50);
             opacity: 0.33;
           }
