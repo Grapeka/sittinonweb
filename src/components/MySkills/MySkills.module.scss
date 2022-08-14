@@ -1,9 +1,10 @@
 .content {
-  max-width: 100vw;
-  height: 180px;
+  padding-top: 55px;
+  width: 100%;
   font-family: "Rubik";
   color: rgb(241, 239, 239);
   .head {
+    font-weight: 500;
     font-size: 28px;
   }
   .skillSet {
@@ -11,7 +12,7 @@
     width: 99%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    row-gap: 10px;
+    row-gap: 11px;
     .aSkill {
       display: flex;
       flex-direction: row;

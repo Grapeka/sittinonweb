@@ -1,0 +1,105 @@
+.container {
+  margin-top: 70px;
+  width: 100%;
+  font-family: "Rubik";
+  color: rgb(241, 239, 239);
+  .head {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 43px;
+
+    .aProject {
+      border-radius: 15px;
+      overflow: hidden;
+      height: 375px;
+      transition: 0.55s;
+
+      &:hover {
+        cursor: pointer;
+        transition: 0.388s;
+        transform: scale(0.98);
+
+        .box {
+          box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+          .img {
+          }
+          .overlay {
+            transition: 0.388s;
+            background-color: rgb(37, 33, 50);
+            opacity: 0.33;
+          }
+        }
+      }
+      .box {
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+        .overlay {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          background-color: rgb(37, 33, 50);
+          opacity: 0;
+        }
+        .banner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          position: absolute;
+          bottom: 0px;
+          height: 29%;
+          width: 100%;
+          background-color: rgba(25, 23, 32, 0.93);
+          .name {
+            width: 92%;
+            font-size: 20px;
+            font-weight: 400;
+          }
+          .tools {
+            margin-top: 4px;
+            width: 92%;
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+
+            .aTool {
+              padding: 0px 8px 1px 8px;
+              border-radius: 11px;
+              span {
+                font-size: 13px;
+              }
+            }
+          }
+
+          .bottom {
+            margin-top: 3px;
+            font-size: 12px;
+            width: 92%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .status {
+            }
+
+            .date {
+            }
+          }
+        }
+      }
+    }
+  }
+}

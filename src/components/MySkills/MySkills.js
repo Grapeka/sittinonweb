@@ -4,17 +4,17 @@ import { useState } from "react";
 
 const MySkills = () => {
   const [skills, setSkills] = useState([
-    "Javascript",
-    "Python",
-    "HTML",
-    "CSS",
-    "React JS",
-    "React native",
-    "Next JS",
-    "Node JS",
-    "NoSQL",
-    "SQL",
-    "Git",
+    "javascript",
+    "python",
+    "html",
+    "css",
+    "react js",
+    "react native",
+    "noded js",
+    "next js",
+    "nosql",
+    "sql",
+    "git",
   ]);
   return (
     <Wrapper>
