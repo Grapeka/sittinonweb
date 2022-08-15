@@ -63,3 +63,72 @@
     }
   }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .container {
+    margin-top: 70px;
+    width: 100%;
+    color: rgb(241, 239, 239);
+    padding-bottom: 70px;
+    .head {
+      span {
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+    .content {
+      margin-top: 13px;
+      width: 88%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .anExp {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .primary {
+          font-weight: 700;
+          width: 100%;
+          .coop {
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .date {
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 9px;
+          }
+        }
+
+        .sub {
+          font-weight: 700;
+          width: 100%;
+          .role {
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          .details {
+            font-weight: 400;
+            font-size: 13px;
+            margin-top: 6px;
+          }
+          .location {
+            font-weight: 400;
+            font-size: 13px;
+            margin-top: 8px;
+          }
+        }
+
+        .primary,
+        .sub {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
