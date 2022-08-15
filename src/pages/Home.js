@@ -6,6 +6,7 @@ import Spacer from "../components/Spacer/Spacer";
 import MySkills from "../components/MySkills/MySkills";
 import Projects from "../components/Projects/Projects";
 import Experiences from "../components/Experiences/Experiences";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   const [navMobileOverlay, setNavMobileOverlay] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
       <Spacer />
       <Experiences />
       <Spacer />
+      <Footer />
       <div className={classes.sth}></div>
     </div>
   );
