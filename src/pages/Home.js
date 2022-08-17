@@ -9,22 +9,18 @@ import Experiences from "../components/Experiences/Experiences";
 import Footer from "../components/Footer/Footer";
 
 const Home = () => {
-  const [navMobileOverlay, setNavMobileOverlay] = useState(false);
   return (
     <div className={classes.container}>
-      <Navbar
-        navMobileOverlay={navMobileOverlay}
-        setNavMobileOverlay={setNavMobileOverlay}
-      />
-      <Greeting />
-      <Spacer />
-      <MySkills />
-      <Projects />
-      <Spacer />
-      <Experiences />
-      <Spacer />
-      <Footer />
-      <div className={classes.sth}></div>
+      <div className={classes.content}>
+        <Greeting />
+        <Spacer />
+        <MySkills />
+        <Projects />
+        <Spacer />
+        <Experiences />
+        <Spacer />
+        <Footer />
+      </div>
     </div>
   );
 };
