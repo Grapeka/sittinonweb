@@ -1,0 +1,93 @@
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10000;
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+
+  .box {
+    width: 41%;
+    min-width: 350px;
+    max-width: 100vw;
+    .content {
+      position: relative;
+      transition: 1.12s;
+      animation-name: expandLeftToRightMeduim;
+      animation-duration: 0.2s;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(10, 12, 20, 255);
+
+      .menu {
+        position: absolute;
+        top: 73px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .item {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 55px;
+          border-bottom: solid rgba(164, 164, 164, 0.2) 1px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .link {
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 8%;
+            color: rgb(241, 239, 239);
+            text-decoration: none;
+          }
+        }
+      }
+
+      .quit {
+        position: absolute;
+        top: 3%;
+        right: 6%;
+        font-size: 16px;
+
+        .icon {
+          color: rgb(241, 239, 239);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 351px) {
+  .page {
+    .box {
+      width: 100vw;
+      min-width: 100vw;
+    }
+  }
+}
+
+@keyframes expandLeftToRightMeduim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
